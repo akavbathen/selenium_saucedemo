@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="SuiteName">
+    <listeners>
+        <listener class-name="utilities.ListenerClass"></listener>
+    </listeners>
+    <test name="TestName">
+        <classes>
+            <class name="tests.BaseTest"/>
+            <class name="tests.ProductsTest">
+                <methods>
+                <include name="tc01_productSelection"/>
+                </methods>
+            </class>
+            <class name="tests.CheckoutOverviewTest">
+                <methods>
+                    <include name="tc05_cancel"/>
+                </methods>
+            </class>
+
+<!--            <class name="tests.CheckoutTest"/>-->
+<!--            <class name="tests.CompleteTest"/>-->
+<!--            <class name="tests.LoginTest"/>-->
+<!--            <class name="tests.MenuTest"/>-->
+<!--            <class name="tests.ProductsTest"/>-->
+<!--            <class name="tests.ShoppingCartTest"/>-->
+<!--            <class name="tests.SocialNet"/>-->
+            <!-- Add more classes here -->
+        </classes>
+    </test>
+    <!-- You can define more <test> tags here if needed -->
+</suite>
